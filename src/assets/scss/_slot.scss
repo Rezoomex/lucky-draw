@@ -68,6 +68,10 @@
     background: $color-slot-background url(@images/light-blubs.svg);
     position: relative;
     z-index: $z-index-slot; // make sure slot is on top of sunburst
+    &__bot {
+      position: absolute;
+      left: -120px;
+    }
   }
 
   &__inner {
@@ -127,6 +131,11 @@
   }
 }
 
+.bot {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 #draw-button {
   width: $draw-button-width;
   max-width: 100%;
